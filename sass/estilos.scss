@@ -1,0 +1,253 @@
+@import "variables";
+
+html{
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    background-color: $color-a;
+    padding: 15px;
+}
+.titulos{
+    color: $color-titulos;
+    text-align: center;
+    font-weight: $bold-font;
+}
+.titulos-seccion{
+    @extend .titulos;
+    text-align: left;
+}
+.parrafos{
+    color: $color-parrafos;
+    font-weight: $light-font;
+    text-align: center;
+}
+.parrafos-integrantes{
+    @extend .parrafos;
+    margin-left: 20px;
+    text-align: left;
+}
+.parrafos-historia{
+    @extend .parrafos;
+    margin: 20px;
+    text-align: left;
+
+}
+
+a{
+    color: $color-a;
+    text-decoration: none;
+    font-weight: $bold-font;
+}
+
+.redes-div{
+    background-color: $color-bordo;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        padding: 0px;
+
+        li{
+            display: inline;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+}
+.redes-lista li:hover{
+    background-color: $color-logo;
+}
+
+.lista-grid{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-rows: 150px;
+    
+    justify-content: center;
+    grid-column-start: 0px;
+    align-items: stretch;
+    grid-auto-flow: inherit;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    .item{
+        background-color: $color-logo;
+        list-style: none;
+        border: 2px solid $color-titulos;
+        padding: 5px;
+        margin: auto;
+    }
+    .logo{
+        @extend .item;
+        background-color: transparent;
+        border: none;
+    }
+    .discografia{
+        @extend .item;
+        align-self: stretch;
+        grid-column: 3;
+    }
+}
+.lista-grid li:hover{
+    transform: scale(2);
+}
+.lista-grid .logo:hover{
+    transform: scale(1);
+}
+a:hover {
+    color: $color-a;
+    text-decoration: none;
+    font-weight: $black-font;
+}
+
+
+.galeria{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: fit-content;
+    padding: 0px;
+    line-height: 0px;
+
+    img{
+        border-style: groove;
+    }
+}
+
+
+.merch{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: $color-bordo;
+    margin: auto;
+    width: fit-content;
+    padding: 50px;
+    text-align: center;
+    font-weight: $thin-font;
+
+    img{
+        border-style: groove;
+    }
+}
+
+    
+.lista2{
+    list-style: none;
+    background-color: $color-bordo;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: fixed;
+    z-index: 2;
+    margin-top: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 0px;
+
+    a{
+        margin-left: 20px;
+    }
+}
+.lista2 a:hover{
+    color: $color-logo;
+    text-decoration: underline;
+}
+
+.integrantes{
+    display: flex;
+    align-items: flex-end;
+    background-color: $color-a;
+    border: 2px solid $color-bordo;
+
+    .fotos-integrantes{
+        border-style: inset;
+    }
+}
+
+.historia{
+    background-color: $color-a;
+    border: 2px solid $color-bordo;
+
+    .titulos-seccion{
+        margin: 20px;
+    }
+    
+    .parrafos-seccion{
+        margin: 20px;
+    }
+}
+
+
+.titulo-discografia{
+    color: $color-parrafos;
+    text-align: center;
+}
+
+.fechas-div{
+    color: $color-parrafos;
+    background-color: $color-bordo;
+    border: groove;
+    text-align: center;
+    margin: auto;
+    padding: 25px;
+}
+
+
+form{
+    color: $color-logo;
+    text-align: center;
+    font-weight: $thin-font;
+    padding: 20px;
+    
+}
+.form{
+    background-color: $color-bordo;
+    border: 2px solid $color-parrafos;
+    margin: 50px;
+}
+.carrusel{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .carrusel{
+        display: block;
+    }
+    .galeria{
+        display: none;
+    }
+
+    .integrantes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: $color-a;
+        border: 2px solid $color-bordo;
+    
+        .fotos-integrantes{
+            border-style: inset;
+        }
+    }
+    .titulos-seccion{
+        text-align: center;
+    }
+
+
+
+
+}

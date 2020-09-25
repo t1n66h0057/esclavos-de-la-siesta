@@ -1,0 +1,242 @@
+html {
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  background-color: black;
+  padding: 15px;
+}
+
+.titulos, .titulos-seccion {
+  color: red;
+  text-align: center;
+  font-weight: 700;
+}
+
+.titulos-seccion {
+  text-align: left;
+}
+
+.parrafos, .parrafos-historia, .parrafos-integrantes {
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+
+.parrafos-integrantes {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.parrafos-historia {
+  margin: 20px;
+  text-align: left;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.redes-div {
+  background-color: #4b0000;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.redes-div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  padding: 0px;
+}
+.redes-div ul li {
+  display: inline;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.redes-lista li:hover {
+  background-color: #ffc800;
+}
+
+.lista-grid {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px 150px;
+  grid-template-rows: 150px;
+  justify-content: center;
+  grid-column-start: 0px;
+  align-items: stretch;
+  grid-auto-flow: inherit;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.lista-grid .item, .lista-grid .discografia, .lista-grid .logo {
+  background-color: #ffc800;
+  list-style: none;
+  border: 2px solid red;
+  padding: 5px;
+  margin: auto;
+}
+.lista-grid .logo {
+  background-color: transparent;
+  border: none;
+}
+.lista-grid .discografia {
+  align-self: stretch;
+  grid-column: 3;
+}
+
+.lista-grid li:hover {
+  transform: scale(2);
+}
+
+.lista-grid .logo:hover {
+  transform: scale(1);
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.galeria {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px;
+  line-height: 0px;
+}
+.galeria img {
+  border-style: groove;
+}
+
+.merch {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #4b0000;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 50px;
+  text-align: center;
+  font-weight: 100;
+}
+.merch img {
+  border-style: groove;
+}
+
+.lista2 {
+  list-style: none;
+  background-color: #4b0000;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: fixed;
+  z-index: 2;
+  margin-top: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0px;
+}
+.lista2 a {
+  margin-left: 20px;
+}
+
+.lista2 a:hover {
+  color: #ffc800;
+  text-decoration: underline;
+}
+
+.integrantes {
+  display: flex;
+  align-items: flex-end;
+  background-color: black;
+  border: 2px solid #4b0000;
+}
+.integrantes .fotos-integrantes {
+  border-style: inset;
+}
+
+.historia {
+  background-color: black;
+  border: 2px solid #4b0000;
+}
+.historia .titulos-seccion {
+  margin: 20px;
+}
+.historia .parrafos-seccion {
+  margin: 20px;
+}
+
+.titulo-discografia {
+  color: white;
+  text-align: center;
+}
+
+.fechas-div {
+  color: white;
+  background-color: #4b0000;
+  border: groove;
+  text-align: center;
+  margin: auto;
+  padding: 25px;
+}
+
+form {
+  color: #ffc800;
+  text-align: center;
+  font-weight: 100;
+  padding: 20px;
+}
+
+.form {
+  background-color: #4b0000;
+  border: 2px solid white;
+  margin: 50px;
+}
+
+.carrusel {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .carrusel {
+    display: block;
+  }
+
+  .galeria {
+    display: none;
+  }
+
+  .integrantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border: 2px solid #4b0000;
+  }
+  .integrantes .fotos-integrantes {
+    border-style: inset;
+  }
+
+  .titulos-seccion {
+    text-align: center;
+  }
+}
