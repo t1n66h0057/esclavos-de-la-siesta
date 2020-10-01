@@ -176,6 +176,10 @@ a:hover {
 }
 .integrantes .fotos-integrantes {
   border-style: inset;
+  margin: 10px;
+}
+.integrantes .parrafos-integrantes {
+  margin: 20px;
 }
 
 .titulos-integrantes {
@@ -192,7 +196,7 @@ a:hover {
   color: red;
   margin: 20px;
 }
-.historia .parrafos-seccion {
+.historia .parrafos-historia {
   margin: 20px;
 }
 
@@ -241,6 +245,11 @@ form {
   }
 
   .titulos-historia {
+    text-align: center;
+  }
+
+  .integrantes {
+    display: block;
     text-align: center;
   }
 

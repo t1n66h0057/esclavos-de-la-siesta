@@ -180,12 +180,19 @@ a:hover {
 
     .fotos-integrantes{
         border-style: inset;
+        margin: 10px;
+    }
+
+    .parrafos-integrantes{
+        margin: 20px;
     }
 }
 .titulos-integrantes{
     color: $color-titulos;
     margin: 20px;
 }
+
+
 .historia{
     background-color: $color-a;
     border: 2px solid $color-bordo;
@@ -196,7 +203,7 @@ a:hover {
         margin: 20px;
     }
     
-    .parrafos-seccion{
+    .parrafos-historia{
         margin: 20px;
     }
 }
@@ -247,6 +254,10 @@ form{
     }
 
     .titulos-historia{
+        text-align: center;
+    }
+    .integrantes{
+        display: block;
         text-align: center;
     }
     .titulos-integrantes{
