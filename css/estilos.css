@@ -4,7 +4,6 @@ html {
 
 body {
   background-color: black;
-  padding: 15px;
 }
 
 .titulos, .titulos-seccion {
@@ -40,7 +39,7 @@ a {
 }
 
 .redes-div {
-  background-color: #4b0000;
+  background-color: #640000;
   position: fixed;
   z-index: 2;
   top: 0;
@@ -64,9 +63,9 @@ a {
   background-color: #ffc800;
 }
 
-.lista-grid {
+.menu-grid {
   display: grid;
-  grid-template-columns: 150px 150px 150px 150px 150px;
+  grid-template-columns: 200px 200px 200px 200px 200px;
   grid-template-rows: 150px;
   justify-content: center;
   grid-column-start: 0px;
@@ -76,27 +75,29 @@ a {
   margin: 0px;
   padding: 0px;
 }
-.lista-grid .item, .lista-grid .discografia, .lista-grid .logo {
+.menu-grid .item, .menu-grid .discografia, .menu-grid .logo {
   background-color: #ffc800;
   list-style: none;
   border: 2px solid red;
   padding: 5px;
   margin: auto;
+  width: 100px;
+  text-align: center;
 }
-.lista-grid .logo {
+.menu-grid .logo {
   background-color: transparent;
   border: none;
 }
-.lista-grid .discografia {
+.menu-grid .discografia {
   align-self: stretch;
   grid-column: 3;
 }
 
-.lista-grid li:hover {
+.menu-grid li:hover {
   transform: scale(2);
 }
 
-.lista-grid .logo:hover {
+.menu-grid .logo:hover {
   transform: scale(1);
 }
 
@@ -104,6 +105,21 @@ a:hover {
   color: black;
   text-decoration: none;
   font-weight: 900;
+}
+
+.menu2 {
+  background-color: #4b0000;
+}
+.menu2 .activo {
+  text-decoration: underline;
+}
+.menu2 a {
+  margin-left: 20px;
+}
+
+.menu2 a:hover {
+  color: #ffc800;
+  text-decoration: underline;
 }
 
 .galeria {
@@ -122,11 +138,15 @@ a:hover {
   border-style: groove;
 }
 
+.carrusel {
+  display: none;
+}
+
 .merch {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background-color: #4b0000;
+  background-color: #640000;
   margin: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -139,36 +159,11 @@ a:hover {
   border-style: groove;
 }
 
-.lista2 {
-  list-style: none;
-  background-color: #4b0000;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;
-  position: fixed;
-  z-index: 2;
-  margin-top: auto;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 0px;
-}
-.lista2 a {
-  margin-left: 20px;
-}
-
-.lista2 a:hover {
-  color: #ffc800;
-  text-decoration: underline;
-}
-
 .integrantes {
   display: flex;
   align-items: flex-end;
   background-color: black;
-  border: 2px solid #4b0000;
+  border: 2px solid #640000;
 }
 .integrantes .fotos-integrantes {
   border-style: inset;
@@ -176,7 +171,7 @@ a:hover {
 
 .historia {
   background-color: black;
-  border: 2px solid #4b0000;
+  border: 2px solid #640000;
 }
 .historia .titulos-seccion {
   margin: 20px;
@@ -192,7 +187,7 @@ a:hover {
 
 .fechas-div {
   color: white;
-  background-color: #4b0000;
+  background-color: #640000;
   border: groove;
   text-align: center;
   margin: auto;
@@ -207,13 +202,9 @@ form {
 }
 
 .form {
-  background-color: #4b0000;
+  background-color: #640000;
   border: 2px solid white;
   margin: 50px;
-}
-
-.carrusel {
-  display: none;
 }
 
 @media (max-width: 768px) {
@@ -230,7 +221,7 @@ form {
     flex-direction: column;
     align-items: center;
     background-color: black;
-    border: 2px solid #4b0000;
+    border: 2px solid #640000;
   }
   .integrantes .fotos-integrantes {
     border-style: inset;
@@ -238,5 +229,33 @@ form {
 
   .titulos-seccion {
     text-align: center;
+  }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: 110px 110px;
+    grid-template-rows: 100px 100px 100px;
+  }
+  .menu-grid .logo {
+    grid-row: 1;
+    grid-column: 1/3;
+  }
+  .menu-grid .discografia {
+    grid-row: 4;
+    grid-column: 1/3;
+  }
+  .menu-grid .item1 {
+    width: 100px;
+    text-align: center;
+    grid-row: 2;
+  }
+  .menu-grid .item2 {
+    width: 100px;
+    text-align: center;
+    grid-row: 3;
+  }
+
+  .menu-grid li:hover {
+    transform: scale(1);
   }
 }
