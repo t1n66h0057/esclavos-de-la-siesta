@@ -202,7 +202,20 @@ a:hover {
 
 .titulo-discografia {
   color: white;
-  text-align: center;
+  margin: 20px;
+}
+
+.video-responsive {
+  position: relative;
+  padding-bottom: 30%;
+}
+
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+  height: 100%;
+  position: absolute;
+  width: 50%;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .fechas-div {
@@ -287,5 +300,26 @@ form {
 
   .merch {
     margin: 20px;
+  }
+
+  .titulo-discografia {
+    text-align: center;
+  }
+
+  .video-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+    margin: 20px;
+  }
+
+  .video-responsive iframe, .video-responsive object, .video-responsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }
