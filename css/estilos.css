@@ -6,14 +6,15 @@ body {
   background-color: black;
 }
 
-.titulos, .titulos-seccion {
+.titulos, .titulos-underline {
   color: red;
   text-align: center;
   font-weight: 700;
 }
 
-.titulos-seccion {
-  text-align: left;
+.titulos-underline {
+  -webkit-text-decoration: underline #ffc800;
+          text-decoration: underline #ffc800;
 }
 
 .parrafos, .parrafos-historia, .parrafos-integrantes {
@@ -65,8 +66,8 @@ a {
 
 .menu-grid {
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px 200px;
-  grid-template-rows: 200px;
+  grid-template-columns: 250px 250px 250px 250px 250px;
+  grid-template-rows: 250px;
   justify-content: center;
   grid-column-start: 0px;
   align-items: stretch;
@@ -90,6 +91,7 @@ a {
 .menu-grid .logo {
   background-color: transparent;
   border: none;
+  width: 100%;
 }
 .menu-grid .discografia {
   align-self: stretch;
@@ -183,7 +185,7 @@ a:hover {
 }
 
 .titulos-integrantes {
-  color: red;
+  color: #ffc800;
   margin: 20px;
 }
 
@@ -195,13 +197,15 @@ a:hover {
 .historia .titulos-historia {
   color: red;
   margin: 20px;
+  -webkit-text-decoration: underline #ffc800;
+          text-decoration: underline #ffc800;
 }
 .historia .parrafos-historia {
   margin: 20px;
 }
 
 .titulo-discografia {
-  color: white;
+  color: #ffc800;
   margin: 20px;
 }
 
@@ -272,8 +276,8 @@ form {
 
   .menu-grid {
     display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 150px 50px 50px;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 200px 50px 50px;
   }
   .menu-grid .logo {
     grid-row: 1;
