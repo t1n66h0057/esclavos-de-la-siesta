@@ -234,6 +234,7 @@ a:hover {
     text-align: center;
     margin: auto;
     padding: 25px;
+    margin: 20px;
 
     a{
         color: $color-logo;
@@ -257,10 +258,11 @@ form{
     margin: 50px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1199px){
     .carrusel{
         display: block;
-        margin: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
     }
     .galeria{
         display: none;
@@ -306,26 +308,30 @@ form{
     }
 
     .merch{
-        margin: 20px;
+        background-color: $color-bordo;
+        margin: auto;
+        width: fit-content;
+        padding: 50px;
+        text-align: center;
+        font-weight: $thin-font;
+    
+        img{
+            border-style: groove;
+            display: block;
+            margin: auto;
+        }
     }
 
     .titulo-discografia{
         text-align: center;
     }
 
-    .video-responsive {
-        height: 0;
-        overflow: hidden;
-        padding-bottom: 56.25%;
-        padding-top: 30px;
-        position: relative;
+    .video-responsive{
+        display: block;
+        margin: auto;
+    }
+    
+    .fechas-div{
         margin: 20px;
-        }
-    .video-responsive iframe, .video-responsive object, .video-responsive embed {
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        }
+    }
 }
