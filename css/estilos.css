@@ -46,6 +46,7 @@ a {
   top: 0;
   right: 0;
   left: 0;
+  padding: 2px;
 }
 .redes-div ul {
   display: flex;
@@ -120,12 +121,15 @@ a:hover {
   right: 0;
   left: 0;
 }
+.menu2 .navbar {
+  padding: 0px;
+}
 .menu2 .activo {
   text-decoration: underline;
 }
 .menu2 a {
   color: #ffc800;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .menu2 a:hover {
@@ -156,7 +160,6 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background-color: #640000;
   margin: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -165,8 +168,12 @@ a:hover {
   text-align: center;
   font-weight: 100;
 }
+.merch .merch-div {
+  margin: 0px 20px;
+}
 .merch img {
   border-style: groove;
+  background-color: #640000;
 }
 
 .integrantes {
@@ -305,7 +312,6 @@ form {
   }
 
   .merch {
-    background-color: #640000;
     margin: auto;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -318,6 +324,7 @@ form {
     border-style: groove;
     display: block;
     margin: auto;
+    background-color: #640000;
   }
 
   .titulo-discografia {

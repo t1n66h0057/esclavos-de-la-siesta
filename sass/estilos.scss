@@ -45,6 +45,7 @@ a{
     top: 0;
     right: 0;
     left: 0;
+    padding: 2px;
 
     ul{
         display: flex;
@@ -122,13 +123,18 @@ a:hover {
     right: 0;
     left: 0;
 
+    .navbar{
+        padding: 0px;
+    }
+
+
     .activo{
     text-decoration: underline;
     }
 
     a{
         color: $color-logo;
-        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 .menu2 a:hover{
@@ -159,15 +165,19 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: $color-bordo;
     margin: auto;
     width: fit-content;
     padding: 50px;
     text-align: center;
     font-weight: $thin-font;
 
+    .merch-div{
+        margin: 0px 20px;
+    }
+
     img{
         border-style: groove;
+        background-color: $color-bordo;
     }
 }
 
@@ -308,7 +318,6 @@ form{
     }
 
     .merch{
-        background-color: $color-bordo;
         margin: auto;
         width: fit-content;
         padding: 50px;
@@ -319,6 +328,7 @@ form{
             border-style: groove;
             display: block;
             margin: auto;
+            background-color: $color-bordo;
         }
     }
 
